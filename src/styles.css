@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+
+/* CSS Variables */
+
+:root {
+  /* Colors */
+  /* Colors MODE HSL(hue, saturation, lightness)*/
+  /* 
+    Blue: hsl(207,90%,61%)
+    Purple: hsl(250, 66%, 75%)
+    Pink: hsl(356, 66%, 75%)
+    Teal: hsl(174, 63%, 62%) 
+    */
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+
+  --primary-color: hsl(var(--hue), var(--sat), var(--lig));
+  --primary-color-alt: hsl(var(--hue), var(--sat), 57%);
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+
+  /* Fonts */
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --normal-font-size: 1.3rem;
+  --small-font-size: 1.2rem;
+  --smaller-font-size: 1.1rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1.1rem;
+    --smaller-font-size: 1rem;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
